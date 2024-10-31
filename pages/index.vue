@@ -1,8 +1,15 @@
+<script setup lang="ts">
+// definePageMeta({
+//   layout: "docs",
+// });
+</script>
 <template>
   <div class="space-y-8">
     <Card class="!p-8">
       <h1 class="text-4xl font-bold mb-4">Welcome to Neubrutalism Design</h1>
-      <p class="text-lg mb-6">This is a modern take on brutalism with a playful twist.</p>
+      <p class="text-lg mb-6">
+        This is a modern take on brutalism with a playful twist.
+      </p>
       <div class="flex gap-4">
         <Button variant="primary">Get Started</Button>
         <Button variant="secondary">Learn More</Button>
@@ -22,3 +29,4 @@
     </div>
   </div>
 </template>
+
