@@ -8,6 +8,6 @@
 </div>
 <hr/>
 
-A list of component generate with shadcn-vue ✨
-
 **⚠️ Note:** under active development 
+
+A list of neubrutalism component generate with shadcn-vue ✨
