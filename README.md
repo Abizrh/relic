@@ -11,3 +11,6 @@
 **⚠️ Note:** under active development 
 
 A list of neubrutalism component generate with shadcn-vue ✨
+
+
+![hero](https://raw.githubusercontent.com/Abizrh/relic/main/public/hero.png)
