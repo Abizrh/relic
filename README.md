@@ -8,7 +8,10 @@
 </div>
 <hr/>
 
-**⚠️ Note:** under active development 
+
+> [!CAUTION]
+> Under active development! ⚒️
+
 
 A list of neubrutalism component generate with shadcn-vue ✨
 
