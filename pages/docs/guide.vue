@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { ref } from "vue";
+
 definePageMeta({
   layout: "docs",
 });
@@ -32,6 +34,37 @@ const resetTheme = () => {
   shadowSize.value = 5;
   updateTheme(localTheme.value);
 };
+const sampleCode = `
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1f2937;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4b5563;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
+/* Ensure line numbers stay fixed while scrolling horizontally */
+pre {
+  position: relative;
+  padding-left: 3rem;
+}
+
+code {
+  display: inline-block;
+  min-width: 100%;
+}
+`;
 </script>
 <template>
   <div class="space-y-8">
@@ -128,39 +161,7 @@ const resetTheme = () => {
       </div>
 
       <div class="mt-8 space-y-6">
-        <h2 class="text-2xl font-bold">Preview</h2>
-        <div class="flex gap-4">
-          <Button variant="primary">Primary Button</Button>
-          <Button variant="secondary">Secondary Button</Button>
-          <Button>Default Button</Button>
-        </div>
-        <div class="flex gap-4">
-          <Badge variant="primary" class="neubrutalism">Primary Button</Badge>
-          <Badge variant="brutalism" class="">Secondary Button</Badge>
-          <Badge>Default Button</Badge>
-        </div>
-        <Card>
-          <h3 class="text-xl font-bold">Sample Card</h3>
-          <p>This is how your cards will look with the current theme.</p>
-        </Card>
-      </div>
-
-      <div class="mt-8 space-y-6">
-        <h2 class="text-2xl font-bold">Preview</h2>
-        <div class="flex gap-4">
-          <Button variant="primary">Primary Button</Button>
-          <Button variant="secondary">Secondary Button</Button>
-          <Button>Default Button</Button>
-        </div>
-        <div class="flex gap-4">
-          <Badge variant="primary" class="neubrutalism">Primary Button</Badge>
-          <Badge variant="brutalism" class="">Secondary Button</Badge>
-          <Badge>Default Button</Badge>
-        </div>
-        <Card>
-          <h3 class="text-xl font-bold">Sample Card</h3>
-          <p>This is how your cards will look with the current theme.</p>
-        </Card>
+        <CodeBox :code="sampleCode" language="css" />
       </div>
 
       <div class="mt-8 flex gap-4">
